@@ -33,7 +33,8 @@ Industry
 Politics
 Logistic companies
 E-commerce
-How Does a Data Scientist Work?
+
+<h1>Skills of Data Scientist Work?</h1>
 A Data Scientist requires expertise in several backgrounds:
 
 Machine Learning
@@ -54,11 +55,11 @@ Normalize data - Scale the values in a practical range (e.g. 140 cm is smaller t
 Analyze data, find patterns and make future predictions.
 Represent the result - Present the result with useful insights in a way the "company" can understand.
 
-<h1>Numpy </h1>
+<h1>What is Numpy </h1>
 the numby is built on c programming ,numpy is the basic of the all data science libraries ,numpy only performed on the numbers not on text type data
 
-<h4>vectors</h4>
+<h4> What is vectors</h4>
 lists are called vectors
 
-<h4>matrix</h4>
-matrix are called vectors
+<h4> What is matrix</h4>
+vectors are called matrix
