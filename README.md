@@ -173,6 +173,50 @@ int64
 newarr = arr.astype(int)
 newarr = arr.astype(bool)
 
+<h4>dirrent typr of creating arrays</h4>
+
+```
+np1 = np.array([0,1,2,3,5,5])
+print(np1.shape) o/p: 6
+```
+create the array of n number like for loop using arange
+
+```
+np2 = np.arange(10)
+print(np2)
+```
+o/p is [0,1,2,3,4,5,6,7,8,9]
+
+```
+np2 = np.arange(0,10,2)
+print(np2)
+```
+
+o/p is [0,2,4,6,8]
+
+```
+np2 = np.zeros(10)
+print(np2)
+```
+o/p is [0,0,0,0,0,0,0,0,0,0]
+
+```
+np2 = np.full((3),5)
+print(np2)
+```
+o/p is [5,5,5]
+
+The creation of multidimensionall array
+
+```
+np2 = np.full((2,3),5)
+print(np2)
+```
+o/p is 
+[[5,5,5]
+,[5,5,5]]
+
+
 <h1>NUMPY array copy and view</h1>
 The Difference Between Copy and View
 The main difference between a copy and a view of an array is that the copy is a new array, and the view is just a view of the original array.
@@ -180,4 +224,5 @@ The main difference between a copy and a view of an array is that the copy is a 
 The copy owns the data and any changes made to the copy will not affect original array, and any changes made to the original array will not affect the copy.
 
 The view does not own the data and any changes made to the view will affect the original array, and any changes made to the original array will affect the view.
+
 
