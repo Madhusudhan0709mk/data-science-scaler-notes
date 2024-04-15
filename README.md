@@ -59,7 +59,125 @@ Represent the result - Present the result with useful insights in a way the "com
 the numby is built on c programming ,numpy is the basic of the all data science libraries ,numpy only performed on the numbers not on text type data
 
 <h4> What is vectors</h4>
-lists are called vectors
+lists are called vectors or 1-D arrary is a vectors
+EX: [1,5,6,9,4,3]
 
 <h4> What is matrix</h4>
+2-D array is a matrix
 vectors are called matrix
+or lists of list  are called matrix
+Ex: [[1,5,3,6,6,9],[5,6,4,1,38,8,8]]
+
+not to use on non numerical data example : store cart item names
+numby only used with numbers numpy not work on gpu
+
+demo code :
+
+```
+import numpy as np
+list = [1,2,5,6,3,5]
+num = np.array(list)
+print(len(num.shape))
+```
+
+o/p: 1
+
+1. One dimensional array creating
+Create a 1-D array containing the values 1,2,3,4,5:
+
+```
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+```
+
+o/p: is
+[1 2 3 4 5]
+
+2. two dimensional array creating
+
+ ```
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+print(arr)
+```
+
+o/p is:
+[[1 2 3]
+ [4 5 6]]
+
+HOW SHAPE IS CALCULATED?
+for above shape o/p is (2,3) where the 2 is the inner in list 3 is the 3 number inside each list
+
+3.Create a 3-D array with two 2-D arrays
+
+```
+import numpy as np
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+print(arr)
+```
+
+o/p is:
+[[[1 2 3]
+  [4 5 6]]
+
+ [[1 2 3]
+  [4 5 6]]]
+
+
+<h1> DATA TYPES IN NUMPY <h2>
+
+# Data Types in NumPy
+i - integer
+b - boolean
+u - unsigned integer
+f - float
+c - complex float
+m - timedelta
+M - datetime
+O - object
+S - string
+U - unicode string
+V - fixed chunk of memory for other type ( void )
+
+```
+import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr.dtype)
+```
+o/p : int64
+
+1. create array from normal to string type
+
+```
+import numpy as np
+arr = np.array([1,2,3],dtype='S')
+print(arr) #o/p is [b'1' b'2' b'3']
+print(arr.dtype) #o/p is S1
+```
+
+2. converting data type of existing array of decimals to integer
+
+```
+import numpy as np
+arr = np.array([1.1, 2.1, 3.1])
+newarr = arr.astype('i')
+print(newarr)
+print(newarr.dtype)
+```
+o/p is
+[1 2 3]
+int64
+
+<p>other parameter to use</p>
+newarr = arr.astype(int)
+newarr = arr.astype(bool)
+
+<h1>NUMPY array copy and view</h1>
+The Difference Between Copy and View
+The main difference between a copy and a view of an array is that the copy is a new array, and the view is just a view of the original array.
+
+The copy owns the data and any changes made to the copy will not affect original array, and any changes made to the original array will not affect the copy.
+
+The view does not own the data and any changes made to the view will affect the original array, and any changes made to the original array will affect the view.
+
