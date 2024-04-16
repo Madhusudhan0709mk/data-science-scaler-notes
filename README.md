@@ -217,6 +217,15 @@ o/p is
 ,[5,5,5]]
 
 
+
+# slicing numpy array
+```
+import numpy as np
+np1 = np.array([1,2,4])
+print(np1[1:3])
+```
+o/p:[2,4]
+
 <h1>NUMPY array copy and view</h1>
 The Difference Between Copy and View
 The main difference between a copy and a view of an array is that the copy is a new array, and the view is just a view of the original array.
