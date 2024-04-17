@@ -234,4 +234,93 @@ The copy owns the data and any changes made to the copy will not affect original
 
 The view does not own the data and any changes made to the view will affect the original array, and any changes made to the original array will affect the view.
 
+<h1>shaping in numpy </h1>
+<h5>shaping in numpy means changing the matrix dimension of array example if array is in 2x3 then np.shape(3,2) then this printing converts to 3x2 array</h5>
+
+```
+np1 = np.array([1,2],[2,3],[4,5])
+np1.shape(3,2)
+print(np1)
+```
+```
+o/p is ([[1,2],
+         [2,3],
+         [4,5]])
+```
+same like this other methods are vstack(),hstack(),column_stack()
+
+examples: np.vstack((n1,n2)) this is vertical stack
+examples: np.hstack((n1,n2)) this is horizontal stack
+examples: np.column_stack((n1,n2)) this is column_stack stack
+
+<h1>addition of two </h1>
+
+to find sum of total all value including all array
+```
+np.sum([n1,n2])
+```
+to find sum of column of all array only then use axis=0
+```
+np.sum([n1,n2].axis=0)
+```
+<h1>APPLY OPERATIONS INDIVISUAL TO ALL THEN</h1>
+
+```
+n1 = n1+1
+n1= n1-1
+n1 = n1*2
+n1 = n1/2
+```
+find mean and median,standard deviation by 
+
+```
+np.std(n2) o/pis standarddeviation of array values
+np.mean(n2) o/pis mean of array values
+np.median(n2) o/pis median of array values
+```
+find transpose of arraymatrix 
+
+```
+print(np1.T)
+or
+np.transpose(np1)
+```
+matrix multiplication
+
+```
+n1.dot(n2) o/p is multiplication of two array
+```
+
+To save the numpy array
+
+```
+import numpy as np
+np1 = np.array([1,2,3,4,5])
+np.save('file_name',np1)
+```
+
+ To load the numpy array
+
+```
+import numpy as np
+np2 = np.load('file_name.npy')
+```
+Tensors in numpy
+
+tensors are the 3D arrray and also 4D,5D arrays
+tensors are immutable,
+tranpose is done by swapping any two axes or rotating the 3d matrix
+swap depths and columns
+
+Broadcasting in numpy is called the applying the operations on array
+
+
+
+
+
+
+
+
+
+
 
