@@ -314,13 +314,63 @@ swap depths and columns
 
 Broadcasting in numpy is called the applying the operations on array
 
+# PANDAS
+<h1> Pandas Tutorial </h1>
+What is Pandas?
+Pandas is a Python library used for working with data sets.
 
+It has functions for analyzing, cleaning, exploring, and manipulating data.
 
+<h1> Why Use Pandas? </h1>
+Pandas allows us to analyze big data and make conclusions based on statistical theories.
 
+Pandas can clean messy data sets, and make them readable and relevant.
 
+Relevant data is very important in data science.
 
+<h1> when to not use pandas</h1>
+when data is more than 3gb and no images can be processed
 
+<h1>convert the array of list to table format by pandas</h1>
 
+```
+import pandas
+
+mydataset = {
+  'cars': ["BMW", "Volvo", "Ford"],
+  'passings': [3, 7, 2]
+}
+
+myvar = pandas.DataFrame(mydataset)
+
+print(myvar)
+```
+<h1> What is a Series?</h1>
+A Pandas Series is like a column in a table.
+
+It is a one-dimensional array holding data of any type.
+
+```
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a)
+
+print(myvar)
+```
+
+<h1>Create a simple Pandas Series from a dictionary:</h1>
+
+```
+import pandas as pd
+
+calories = {"day1": 420, "day2": 380, "day3": 390}
+
+myvar = pd.Series(calories)
+
+print(myvar)
+```
 
 
 
